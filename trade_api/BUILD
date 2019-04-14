@@ -3,7 +3,7 @@ package(default_visibility = ["//visibility:public"])
 cc_import(
     name = "trader_api",
     hdrs = ["trade_api_linux_64/thosttraderapi.h"],
-    shared_library = "trade_api_linux_64/thosttraderapi.so",
+    shared_library = "trade_api_linux_64/libthosttraderapi.so",
 )
 
 cc_import(
@@ -13,5 +13,5 @@ cc_import(
         "trade_api_linux_64/ThostFtdcUserApiDataType.h",
         "trade_api_linux_64/ThostFtdcUserApiStruct.h",
     ],
-    shared_library = "trade_api_linux_64/thostmduserapi.so",
+    shared_library = "trade_api_linux_64/libthostmduserapi.so",
 )
