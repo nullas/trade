@@ -7,7 +7,13 @@ namespace trade {
 
 class Md : public CThostFtdcMdSpi {
  public:
+  virtual ~Md();
+
   void OnFrontConnected() override;
+
+  void OnRspUserLogin(CThostFtdcRspUserLoginField *pRspUserLogin,
+                      CThostFtdcRspInfoField *pRspInfo, int nRequestID,
+                      bool bIsLast) override;
 };
 
 }  // namespace trade
